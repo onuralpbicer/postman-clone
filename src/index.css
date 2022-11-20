@@ -1,0 +1,50 @@
+:root {
+	font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+
+	color-scheme: light dark;
+	color: var(--text-color);
+	/* color: rgba(255, 255, 255, 0.87); 
+    background-color: #242424; */
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+#root {
+	height: 100vh;
+}
+
+:root {
+	--button-primary: rgb(0, 111, 175);
+	--button-primary-hover: rgb(0, 85, 134);
+	--selected: orange;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--main-bg: #333;
+		--bg-hover: rgb(78, 78, 78);
+		--text-color: rgb(150, 150, 150);
+		--text-hover-color: rgb(233, 232, 232);
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--main-bg: rgb(233, 232, 232);
+		--bg-hover: rgb(177, 177, 177);
+		--text-color: rgb(92, 92, 92);
+		--text-hover-color: rgb(24, 24, 24);
+	}
+}
